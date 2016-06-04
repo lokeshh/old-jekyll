@@ -74,21 +74,28 @@ This a ideal place where we can use Categorical Index if we want to study about 
 ```
 
 Let's see all regions there are:
+
 ```ruby
 > df.index.cat
   ["Eastern Mediterranean", "Europe", "Africa", "Americas", "Western Pacific", "South-East Asia"]
 ```
+
 Let's find out how many countries lie in Africa region.
+
 ```ruby
 > df.row['Africa'].size
   46
 ```
+
 Finding out the mean life expectancy of europe is as easy as
+
 ```ruby
 > df.row['Europe'].vector['LifeExpectancy'].mean
   76.73584905660377
 ```
+
 Let's see the maximum life expectancy  of South-East Asia
+
 ```ruby
 > df.row['South-East Asia'].vector['LifeExpectancy'].min
   63
