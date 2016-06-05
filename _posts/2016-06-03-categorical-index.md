@@ -102,3 +102,31 @@ Let's see the maximum life expectancy  of South-East Asia
 ```
 
 ## Internal architecture
+
+
+To efficiently store the index and make retrieval possible in constant time, `Daru::CategoricalIndex` uses two data structres-
+- Hash-table: To map each category to positional values. It is represented as `@cat_hash`.
+- Array: To map each position to a integer which represent a category.
+
+For example:
+
+```ruby
+idx = Daru::CategoricalIndex.new [:a, :b, :a, :b, :C]
+```
+
+For `idx`, the hash table and array woul be:
+
+```ruby
+@cat_hash = {a: [0, 2], b: [1, 3], c: [4]}
+
+@array = [0, 1, 0, 1, 2]
+```
+
+(Of course, we would need to have a variable to map `0` to `:a`, `1` to `:b` and `2` to `:c`.)
+
+The hash table helps us in retriving all instances which belong to that category in real time.
+
+Similary, the array helps us in retriving category of an instance in constant time.
+
+And the reason to store integers in the array instead of name of categories itself is to avoid unnecessary usage of space.
+
