@@ -34,7 +34,7 @@ Let's see an example.
 
 (Alternatively you can also see this example in iRuby notebook [here](http://nbviewer.jupyter.org/github/lokeshh/sciruby-notebooks/blob/cat_index/Data%20Analysis/%5BExample%5D%20Categorical%20Index.ipynb))
 
-```ruby
+{% highlight ruby %}
 require 'daru'
 
 require 'open-uri'
@@ -61,7 +61,7 @@ df.vector[0..5]
            13 Bangladesh South-East     155000      30.57       6.89       2.24
            14   Barbados   Americas        283      18.99      15.78       1.84
           ...        ...        ...        ...        ...        ...        ...
-```
+{% endhighlight %}
 
 The data is about countries. The region column describes the region that country belongs to. A region can have more than one country.
 
