@@ -28,11 +28,11 @@ The new `Daru::CategoricalIndex` is to have data indexed sparsely populated inde
 
 Please visit [this link](http://nbviewer.jupyter.org/github/lokeshh/sciruby-notebooks/blob/cat_index/Data%20Analysis/Indexing%20in%20Vector.ipynb) before to get a basic understanding of how indexing works in Daru::Vector and [this link](nbviewer.jupyter.org/url/github.com/lokeshh/sciruby-notebooks/raw/cat_index/Data%20Analysis/Indexing%20in%20DataFrame.ipynb) for Daru::DataFrame.
 
-This enable use to categorize data into categories.
+## Example
 
 Let's see an example.
 
-(Alternatively you can also see this example [here](http://nbviewer.jupyter.org/github/lokeshh/sciruby-notebooks/blob/cat_index/Data%20Analysis/%5BExample%5D%20Categorical%20Index.ipynb))
+(Alternatively you can also see this example in iRuby notebook [here](http://nbviewer.jupyter.org/github/lokeshh/sciruby-notebooks/blob/cat_index/Data%20Analysis/%5BExample%5D%20Categorical%20Index.ipynb))
 
 ```ruby
 require 'daru'
