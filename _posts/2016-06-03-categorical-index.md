@@ -136,3 +136,11 @@ Similary, the array helps us in retriving category of an instance in constant ti
 
 And the reason to store integers in the array instead of name of categories itself is to avoid unnecessary usage of space.
 
+## When and why to use Categorical Index
+
+If you have a categorical variable or data where there are more than one instance of same object and you want to index the dataframe by that column.
+
+It will save you a lot of space and make access to the same category fast.
+
+Also if you want your dataframe to be indexed by a column in which not every entry is unique categorical index will come to the rescue.
+
